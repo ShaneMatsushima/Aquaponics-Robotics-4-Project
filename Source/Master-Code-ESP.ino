@@ -95,27 +95,8 @@ void setup() {
 }
 
 void waterlevel(){
-if(fv4 == 1){
-  if(fv3 == 1){
-    if(fv2 == 1){
-      if(fv1 == 1){
-        value = 0;
-      }
-      else{
-        value = 1;
-      }
-    }
-    else{
-      value = 2;
-    }
-  }
-  else{
-    value = 3;
-  }
-}
-  else{
-    value = 4;
-  }
+  int total = fv4 + fv3 + fv2 + fv1;
+  value = total;
 }
 
 void postData(float fsensor, float temps, float pHs){
